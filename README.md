@@ -1,2 +1,3 @@
-# Android
-Project Based learning repository for Android Projects
+# ANDROID PROJECTS 
+
+#### This is project based learning reporsitory containing basic to moderate android apps. 
