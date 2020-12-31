@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cleveroad:audiovisualization:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6780808e4f36d8b574fe8974de8ae6c/jetified-audiovisualization-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6780808e4f36d8b574fe8974de8ae6c/jetified-audiovisualization-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6780808e4f36d8b574fe8974de8ae6c/jetified-audiovisualization-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2936bc48675b0af001a30c50d7acf69e/jetified-audiovisualization-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2936bc48675b0af001a30c50d7acf69e/jetified-audiovisualization-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2936bc48675b0af001a30c50d7acf69e/jetified-audiovisualization-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aff2e7925d1890d191d9188287648b45/jetified-audiovisualization-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aff2e7925d1890d191d9188287648b45/jetified-audiovisualization-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aff2e7925d1890d191d9188287648b45/jetified-audiovisualization-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/47ed1d757a54fafc5386d730bc9c2239/jetified-audiovisualization-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/47ed1d757a54fafc5386d730bc9c2239/jetified-audiovisualization-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/47ed1d757a54fafc5386d730bc9c2239/jetified-audiovisualization-1.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleveroad/audiovisualization/1.0.1/e38a35f2e85736f4fd8dfac2bbcdc222ce16a5d9/audiovisualization-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleveroad/audiovisualization/1.0.1/b1ffa9804357772daadebec235889ed581e9395/audiovisualization-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
