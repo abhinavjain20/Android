@@ -1,16 +1,15 @@
 package io.realworld.android.ui.articles
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import io.realworld.android.R
 import io.realworld.android.databinding.FragmentArticlesBinding
+import io.realworld.android.ui.extensions.timeStamp
+import io.realworld.android.ui.extensions.loadImage
 
 class ArticlesFragment : Fragment() {
     private var _binding: FragmentArticlesBinding? = null
@@ -40,7 +39,8 @@ class ArticlesFragment : Fragment() {
                 titleTextView.text = it.title
                 authorTextView.text = it.author.username
                 bodyTextView.text = it.body
-                dateTextView.text = it.createdAt //TODO ::  format Date
+                dateTextView.timeStamp = it.createdAt
+                avatarImageView.loadImage(it.author.image, true)
             }
         }
     }
