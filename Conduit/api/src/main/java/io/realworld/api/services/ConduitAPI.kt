@@ -2,6 +2,7 @@ package io.realworld.api.services
 
 import io.realworld.api.models.requests.LoginRequest
 import io.realworld.api.models.requests.SignUpRequest
+import io.realworld.api.models.responses.ArticleResponse
 import io.realworld.api.models.responses.ArticlesResponse
 import io.realworld.api.models.responses.TagsResponse
 import io.realworld.api.models.responses.UserResponse
@@ -30,7 +31,7 @@ interface ConduitAPI {
     @GET("articles/{slug}")
     suspend fun getArticlebySlug(
         @Path("slug") slug: String
-    ): Response<ArticlesResponse>
+    ): Response<ArticleResponse>
 
     @GET("tags")
     suspend fun getTags(): Response<TagsResponse>

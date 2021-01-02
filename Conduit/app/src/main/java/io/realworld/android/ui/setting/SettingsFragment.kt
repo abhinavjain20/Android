@@ -20,7 +20,6 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
-
         return _binding?.root
     }
 
@@ -51,10 +50,6 @@ class SettingsFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
         _binding = null
     }
 }

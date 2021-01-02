@@ -8,4 +8,5 @@ object ArticlesRepo {
 
     suspend fun getGlobalFeed() = api.getArticles().body()?.articles
     suspend fun getMyFeed() = authApi.getFeedArticles().body()?.articles
+    suspend fun fetchArticle(slug: String) = api.getArticlebySlug(slug).body()?.article
 }

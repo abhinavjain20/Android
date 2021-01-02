@@ -8,11 +8,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import io.realworld.android.R
 import io.realworld.android.databinding.ListItemArticleBinding
 import io.realworld.api.models.entities.Article
 
-class ArticleFeedAdapter :
+class ArticleFeedAdapter(val onArticlesClick: (slug : String) -> Unit) :
     ListAdapter<Article, ArticleFeedAdapter.ArticleViewHolder>(ArticleDiffUtilCallback()) {
     inner class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     class ArticleDiffUtilCallback :
@@ -43,6 +42,8 @@ class ArticleFeedAdapter :
             bodySnippetTextView.text = article.body
             dateTextView.text = "December 24, 2020"
             avatarImageView.setImageDrawable(ColorDrawable(Color.GREEN))
+
+            root.setOnClickListener { onArticlesClick(article.slug) }
         }
     }
 }
