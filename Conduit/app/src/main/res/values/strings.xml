@@ -14,5 +14,9 @@
     <string name="menu_settings">Settings</string>
     <string name="arg_article_id">ARTICLE_ID</string>
     <string name="settings_name">Your Settings</string>
+    <string name="connection_error">Unable to connect with the server. Check your internet connection and try again.</string>
+    <string name="app_name_bio">A place to share your knowledge</string>
+    <string name="connection_lost">Connection Error</string>
+    <string name="try_again">TRY AGAIN</string>
 
 </resources>
