@@ -4,11 +4,11 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import io.realworld.android.databinding.ActivitySplashBinding
 
+@Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var _binding: ActivitySplashBinding
@@ -20,9 +20,11 @@ class SplashActivity : AppCompatActivity() {
 
         if (!hasConnected()) {
             _binding.connectionErrorMsg.isVisible = true
-            _binding.splashScreen.isVisible = false
+//            _binding.splashScreen.isVisible = false
             _binding.tryAgainBtn.setOnClickListener {
-                Toast.makeText(this, "Give Internet Permission", Toast.LENGTH_LONG).show()
+                val intent = Intent(this@SplashActivity, SplashActivity::class.java)
+                startActivity(intent)
+                this.finish()
             }
         } else {
             Handler().postDelayed({

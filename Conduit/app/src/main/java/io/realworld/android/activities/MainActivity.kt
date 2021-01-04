@@ -5,6 +5,10 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -14,10 +18,12 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
+import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import io.realworld.android.AuthViewModel
 import io.realworld.android.R
 import io.realworld.android.databinding.ActivityMainBinding
+import io.realworld.android.ui.extensions.loadImage
 import io.realworld.api.models.entities.User
 
 class MainActivity : AppCompatActivity() {
@@ -30,12 +36,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var _appBarConfiguration: AppBarConfiguration
     private lateinit var _authViewModel: AuthViewModel
     private lateinit var _binding: ActivityMainBinding
-    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var _sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        sharedPreferences = getSharedPreferences(PREF_FILE_AUTH, Context.MODE_PRIVATE)
+        _sharedPreferences = getSharedPreferences(PREF_FILE_AUTH, Context.MODE_PRIVATE)
         _authViewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
 
 
@@ -58,20 +64,35 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, _appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        sharedPreferences.getString(PREF_KEY_TOKEN, null)?.let { t ->
+        val hView: View = navView.getHeaderView(0)
+
+        val navUser = hView.findViewById(R.id.textView) as TextView
+        val navImage = hView.findViewById(R.id.imageView) as ImageView
+        val navHeader = hView.findViewById(R.id.navUserhead) as LinearLayout
+        val navHeaderSplash = hView.findViewById(R.id.navHeadSplash) as LinearLayout
+        val navBio = hView.findViewById(R.id.bioText) as TextView
+
+        _sharedPreferences.getString(PREF_KEY_TOKEN, null)?.let { t ->
             _authViewModel.getCurrentUser(t)
         }
 
         _authViewModel.user.observe({ lifecycle }) {
             updateMenu(it)
             it?.token?.let { t ->
-                sharedPreferences.edit {
+                navHeaderSplash.isVisible = false
+                navHeader.isVisible = true
+                navUser.text = it.username
+                navImage.loadImage(it.image.toString(), true)
+                navBio.text = it.bio
+                _sharedPreferences.edit {
                     putString(PREF_KEY_TOKEN, t)
                 }
             } ?: run {
-                sharedPreferences.edit {
+                _sharedPreferences.edit {
                     remove(PREF_KEY_TOKEN)
                 }
+                navHeader.isVisible = false
+                navHeaderSplash.isVisible = true
             }
             navController.navigateUp()
         }
