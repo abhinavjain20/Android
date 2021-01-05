@@ -37,6 +37,28 @@
             </LayoutPositions>
           </value>
         </entry>
+        <entry key="navigation_article.xml">
+          <value>
+            <LayoutPositions>
+              <option name="myPositions">
+                <map>
+                  <entry key="newArticleFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="40" />
+                            <option name="y" value="40" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </LayoutPositions>
+          </value>
+        </entry>
         <entry key="navigation_auth.xml">
           <value>
             <LayoutPositions>
@@ -91,8 +113,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="79" />
-                            <option name="y" value="-43" />
+                            <option name="x" value="-1315" />
+                            <option name="y" value="-327" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -103,8 +125,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="253" />
-                            <option name="y" value="-258" />
+                            <option name="x" value="-1317" />
+                            <option name="y" value="-693" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -115,8 +137,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-159" />
-                            <option name="y" value="-241" />
+                            <option name="x" value="-1746" />
+                            <option name="y" value="-580" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -136,12 +158,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-150" />
-                            <option name="y" value="153" />
+                            <option name="x" value="-1750" />
+                            <option name="y" value="-112" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_myFeed_NewArticle">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_myFeed_openArticle">
                               <value>
                                 <LayoutPositions />
@@ -152,13 +179,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="nav_new_article">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1311" />
+                            <option name="y" value="-20" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="nav_settings">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="260" />
-                            <option name="y" value="149" />
+                            <option name="x" value="-980" />
+                            <option name="y" value="-323" />
                           </Point>
                         </option>
                       </LayoutPositions>

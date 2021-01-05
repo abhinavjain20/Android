@@ -35,6 +35,13 @@ class MyFeedFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        _binding?.fab?.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_myFeed_NewArticle
+            )
+        }
+
         viewModel.fetchMyFeed()
         viewModel.feed.observe(viewLifecycleOwner) {
             feedAdapter.submitList(it)

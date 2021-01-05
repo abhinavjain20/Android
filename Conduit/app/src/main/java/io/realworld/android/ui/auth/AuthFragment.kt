@@ -14,7 +14,7 @@ import io.realworld.android.databinding.FragmentAuthBinding
 class AuthFragment : Fragment() {
 
     private var _binding: FragmentAuthBinding? = null
-    private var _navcontroller: NavController? = null
+    private var _navController: NavController? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,17 +28,17 @@ class AuthFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        _navcontroller = _binding?.let {
+        _navController = _binding?.let {
             Navigation.findNavController(it.root.findViewById(R.id.authFragmentNavHost))
         }
         _binding?.authTabLayout?.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 when (tab?.position) {
                     0 -> {
-                        _navcontroller?.navigate(R.id.gotoLoginFragment)
+                        _navController?.navigate(R.id.gotoLoginFragment)
                     }
                     1 -> {
-                        _navcontroller?.navigate(R.id.gotoSignupFragment)
+                        _navController?.navigate(R.id.gotoSignupFragment)
                     }
                 }
             }

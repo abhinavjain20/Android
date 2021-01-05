@@ -1,4 +1,4 @@
-package io.realworld.android.ui.settings
+package io.realworld.android.ui.setting
 
 import android.os.Bundle
 import android.view.LayoutInflater

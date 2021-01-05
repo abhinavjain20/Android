@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.nav_auth,
                 R.id.nav_my_feed,
-                R.id.nav_feed
+                R.id.nav_feed,
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, _appBarConfiguration)
@@ -75,6 +75,11 @@ class MainActivity : AppCompatActivity() {
         _sharedPreferences.getString(PREF_KEY_TOKEN, null)?.let { t ->
             _authViewModel.getCurrentUser(t)
         }
+
+//        navView.menu.findItem(R.id.nav_logout).setOnMenuItemClickListener {
+//            _authViewModel.logout()
+//            return@setOnMenuItemClickListener true
+//        }
 
         _authViewModel.user.observe({ lifecycle }) {
             updateMenu(it)
