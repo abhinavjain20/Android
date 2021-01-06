@@ -9,8 +9,8 @@ data class ArticleData(
     val body: String,
     @Json(name = "description")
     val description: String,
-    @Json(name = "tagList")
-    val tagList: List<String>,
+//    @Json(name = "tagList")
+//    val tagList: List<String>,
     @Json(name = "title")
-    val title: String
+    val title: String?
 )

@@ -6,7 +6,7 @@
     android:padding="10dp">
 
     <EditText
-        android:id="@+id/articleEditText"
+        android:id="@+id/newArticleTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -14,7 +14,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/articleBrief"
+        android:id="@+id/newArticleBrief"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -22,7 +22,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/articleBody"
+        android:id="@+id/newArticleBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
         android:lines="5" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/publishArticle"
+        android:id="@+id/publishButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

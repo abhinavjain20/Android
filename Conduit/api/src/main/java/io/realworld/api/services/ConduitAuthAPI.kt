@@ -1,5 +1,6 @@
 package io.realworld.api.services
 
+import io.realworld.api.models.requests.CreateArticleRequest
 import io.realworld.api.models.requests.UserUpdateRequest
 import io.realworld.api.models.responses.ArticleResponse
 import io.realworld.api.models.responses.ArticlesResponse
@@ -44,5 +45,10 @@ interface ConduitAuthAPI {
     @DELETE("articles/{slug}/favorite")
     suspend fun unfavoriteArticle(
         @Path("slug") slug: String
+    ): Response<ArticleResponse>
+
+    @POST("articles")
+    suspend fun createArticle(
+        @Body userCreateRequest : CreateArticleRequest
     ): Response<ArticleResponse>
 }

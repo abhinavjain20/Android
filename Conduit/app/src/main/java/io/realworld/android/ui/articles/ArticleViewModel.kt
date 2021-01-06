@@ -18,4 +18,11 @@ class ArticleViewModel : ViewModel() {
             _article.postValue(it)
         }
     }
+
+    fun createArticle(body: String, description: String, title: String?) =
+        viewModelScope.launch {
+            ArticlesRepo.createArticle(body, description, title!!)?.let {
+                _article.postValue(it)
+            }
+        }
 }

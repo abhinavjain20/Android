@@ -28,7 +28,9 @@ class ArticlesFragment : Fragment() {
             articleId = it.getString(resources.getString(R.string.arg_article_id))
         }
 
-        articleId?.let { articleViewModel.fetchArticle(it) }
+        articleId?.let {
+            articleViewModel.fetchArticle(it)
+        }
         return _binding?.root
     }
 

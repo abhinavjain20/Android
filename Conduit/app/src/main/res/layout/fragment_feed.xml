@@ -18,6 +18,7 @@
         android:backgroundTint="@color/conduit_green"
         android:src="@drawable/ic_menu_article"
         app:elevation="6dp"
+        android:scrollbarDefaultDelayBeforeFade="@integer/config_navAnimTime"
         app:fabSize="auto"
         app:rippleColor="@color/conduit_green_transparent"/>
 
