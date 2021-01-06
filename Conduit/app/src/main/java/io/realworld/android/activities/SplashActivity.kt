@@ -35,6 +35,7 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
+    // Connected to Internet
     private fun hasConnected(): Boolean {
         val cm = this.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
         val activeNetwork = cm.activeNetworkInfo

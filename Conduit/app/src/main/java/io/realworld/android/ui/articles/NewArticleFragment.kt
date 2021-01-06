@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import io.realworld.android.R
 import io.realworld.android.databinding.FragmentUserArtcleBinding
 
 class NewArticleFragment : Fragment() {
@@ -32,6 +34,9 @@ class NewArticleFragment : Fragment() {
                     title = newArticleTitle.text.toString().takeIf { it.isNotBlank() },
                     description = newArticleBrief.text.toString(),
                     body = newArticleBrief.text.toString()
+                )
+                findNavController().navigate(
+                    R.id.action_nav_new_article_to_nav_feed
                 )
             }
         }

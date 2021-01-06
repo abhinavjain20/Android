@@ -12,8 +12,7 @@
         tools:layout="@layout/fragment_feed">
         <action
             android:id="@+id/action_globalFeed_openArticle"
-            app:destination="@id/nav_article"
-            app:popUpTo="@id/nav_feed" />
+            app:destination="@id/nav_article" />
         <argument
             android:name="@string/arg_article_id"
             app:argType="string" />
@@ -26,8 +25,7 @@
         tools:layout="@layout/fragment_feed">
         <action
             android:id="@+id/action_myFeed_openArticle"
-            app:destination="@id/nav_article"
-            app:popUpTo="@id/nav_my_feed">
+            app:destination="@id/nav_article">
             <argument
                 android:name="@string/arg_article_id"
                 app:argType="string" />
@@ -57,8 +55,16 @@
 
     <fragment
         android:id="@+id/nav_new_article"
-        android:label="@string/new_article"
         android:name="io.realworld.android.ui.articles.NewArticleFragment"
-        tools:layout="@layout/fragment_user_artcle" />
+        android:label="@string/new_article"
+        tools:layout="@layout/fragment_user_artcle">
+        <action
+            android:id="@+id/action_nav_new_article_to_nav_feed"
+            app:destination="@id/nav_feed"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
 
 </navigation>
