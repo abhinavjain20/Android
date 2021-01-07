@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import io.realworld.android.R
-import io.realworld.android.databinding.FragmentUserArtcleBinding
+import io.realworld.android.databinding.FragmentPublishArtcleBinding
 
 class NewArticleFragment : Fragment() {
 
-    private var _binding: FragmentUserArtcleBinding? = null
+    private var _binding: FragmentPublishArtcleBinding? = null
     private lateinit var articleViewModel: ArticleViewModel
 
     override fun onCreateView(
@@ -20,7 +20,7 @@ class NewArticleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentUserArtcleBinding.inflate(inflater, container, false)
+        _binding = FragmentPublishArtcleBinding.inflate(inflater, container, false)
         articleViewModel = ViewModelProvider(this).get(ArticleViewModel::class.java)
         return _binding?.root
     }

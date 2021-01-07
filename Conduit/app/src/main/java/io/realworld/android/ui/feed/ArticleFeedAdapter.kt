@@ -7,11 +7,13 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import io.realworld.android.databinding.ListItemArticleBinding
-import io.realworld.android.ui.extensions.timeStamp
 import io.realworld.android.ui.extensions.loadImage
+import io.realworld.android.ui.extensions.timeStamp
 import io.realworld.api.models.entities.Article
 
-class ArticleFeedAdapter(val onArticlesClick: (slug: String) -> Unit) :
+class ArticleFeedAdapter(
+    val onArticlesClick: (slug: String) -> Unit
+) :
     ListAdapter<Article, ArticleFeedAdapter.ArticleViewHolder>(ArticleDiffUtilCallback()) {
     inner class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     class ArticleDiffUtilCallback :

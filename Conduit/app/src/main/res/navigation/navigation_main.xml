@@ -57,7 +57,7 @@
         android:id="@+id/nav_new_article"
         android:name="io.realworld.android.ui.articles.NewArticleFragment"
         android:label="@string/new_article"
-        tools:layout="@layout/fragment_user_artcle">
+        tools:layout="@layout/fragment_publish_artcle">
         <action
             android:id="@+id/action_nav_new_article_to_nav_feed"
             app:destination="@id/nav_feed"

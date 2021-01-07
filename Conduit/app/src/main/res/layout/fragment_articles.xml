@@ -15,22 +15,27 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         tools:text="Title of the Article" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:padding="4dp">
 
         <ImageView
             android:id="@+id/avatarImageView"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             tools:background="@color/conduit_green" />
 
         <LinearLayout
+            android:id="@+id/inner_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/avatarImageView"
             android:orientation="vertical">
 
             <TextView
@@ -47,7 +52,21 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 tools:text="December 15, 2020" />
         </LinearLayout>
-    </LinearLayout>
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/conduit_grey"
+            android:drawableLeft="@drawable/ic_menu_follow"
+            android:gravity="center_vertical"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:text="Follow" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/bodyTextView"
@@ -58,5 +77,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         tools:text="ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error" />
 
-
 </LinearLayout>
+
+
+

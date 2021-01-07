@@ -47,6 +47,5 @@ object UserRepo {
         return authApi.getCurrentUser().body()?.user
     }
 
-
     suspend fun getUserProfile() = authApi.getCurrentUser().body()?.user
 }

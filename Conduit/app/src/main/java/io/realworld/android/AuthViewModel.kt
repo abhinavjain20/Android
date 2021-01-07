@@ -46,4 +46,5 @@ class AuthViewModel : ViewModel() {
             _user.postValue(it)
         }
     }
+
 }

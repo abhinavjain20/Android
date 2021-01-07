@@ -76,11 +76,6 @@ class MainActivity : AppCompatActivity() {
             _authViewModel.getCurrentUser(t)
         }
 
-//        navView.menu.findItem(R.id.nav_logout).setOnMenuItemClickListener {
-//            _authViewModel.logout()
-//            return@setOnMenuItemClickListener true
-//        }
-
         _authViewModel.user.observe({ lifecycle }) {
             updateMenu(it)
             it?.token?.let { t ->
@@ -138,3 +133,11 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(_appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
+
+/*
+*  TODO : //
+*   1. Menu Item when logout
+*   2. Unfollow and follow properly
+*   3. Floating button animation
+*   4. Add Navigation to follow when no user
+*/
