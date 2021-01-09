@@ -64,8 +64,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, _appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val hView: View = navView.getHeaderView(0)
-
+        val hView: View = _binding.navView.getHeaderView(0)
         val navUser = hView.findViewById(R.id.textView) as TextView
         val navImage = hView.findViewById(R.id.imageView) as ImageView
         val navHeader = hView.findViewById(R.id.navUserhead) as LinearLayout
@@ -140,4 +139,5 @@ class MainActivity : AppCompatActivity() {
 *   2. Unfollow and follow properly
 *   3. Floating button animation
 *   4. Add Navigation to follow when no user
+*   5. persistence follow and Unfollow section
 */

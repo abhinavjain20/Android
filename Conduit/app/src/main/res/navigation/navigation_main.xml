@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@+id/nav_feed">
+    app:startDestination="@id/nav_feed">
 
     <fragment
         android:id="@+id/nav_feed"
@@ -51,7 +51,15 @@
     <fragment
         android:id="@+id/nav_article"
         android:name="io.realworld.android.ui.articles.ArticlesFragment"
-        tools:layout="@layout/fragment_articles" />
+        tools:layout="@layout/fragment_articles">
+        <action
+            android:id="@+id/action_follow_to_auth"
+            app:destination="@id/nav_auth"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_new_article"

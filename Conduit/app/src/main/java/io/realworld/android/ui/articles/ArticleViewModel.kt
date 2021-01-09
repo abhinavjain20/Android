@@ -30,4 +30,8 @@ class ArticleViewModel : ViewModel() {
     fun followProfile(username: String) = viewModelScope.launch {
         ProfileRepo.followProfile(username)
     }
+
+    fun unfollowProfile(username: String) = viewModelScope.launch {
+        ProfileRepo.unfollowProfile(username)
+    }
 }

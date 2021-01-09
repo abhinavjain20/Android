@@ -10,4 +10,9 @@ object ProfileRepo {
         val response = authApi.followProfile(username)
         return response.body()?.profile
     }
+
+    suspend fun unfollowProfile(username: String): Profile? {
+        val response = authApi.unfollowProfile(username)
+        return response.body()?.profile
+    }
 }
