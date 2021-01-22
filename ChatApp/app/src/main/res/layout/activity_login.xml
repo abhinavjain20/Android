@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context=".loginActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,19 +14,19 @@
         android:layout_marginTop="28dp"
         android:text="Welcome to ChatApp"
         android:textAlignment="center"
-        android:fontFamily="serif-monospace"
-        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:textColor="@color/colorPrimary"
         android:textSize="28sp"
+        android:layout_gravity="center"
         android:textStyle="bold" />
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Verify Your Number"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/open_sans_semibold"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -34,9 +34,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:fontFamily="serif"
         android:gravity="center"
-        android:padding="15dp"
+        android:padding="20dp"
+        android:textColor="#000"
         android:text="Please enter your mobile number.You will get a SMS including a verification code."
         android:textSize="16sp" />
 
