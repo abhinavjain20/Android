@@ -4,23 +4,27 @@
 		src="https://github.com/abhinavjain20/Android/blob/master/Echo/app/src/main/res/drawable/echo_logo.png?raw=true">
 </h1>
 
-### A Basic Music Player App developed in Kotlin and XML with Audio Visualizer Wave Effect using Cleverroad WaveInApp API [Link](https://github.com/Cleveroad/WaveInApp)
+## Developed a Full Stack Android Application built with Kotlin for playing the Music.
 
+### A Music Player Application built with Kotlin and XML with Audio Visualizer Wave Effect using Cleverroad WaveInApp [API](https://github.com/Cleveroad/WaveInApp).
+<br/>
+<img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_1.PNG?raw=true" width="200" /> 
+<img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_3.PNG?raw=true" width="190" />
+<img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_4.PNG?raw=true" width="212" />
 
-<p float="left">
-  <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_2.PNG?raw=true" width="200" />
-  <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_1.PNG?raw=true" width="200" /> 
-</p>
+<br/>
 
-<p float="left">
-  <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_3.PNG?raw=true" width="200" />
-  <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_4.PNG?raw=true" width="200" /> 
-</p>
+## Development 
+The Project is developed in [Android Studio](https://developer.android.com/studio).<br/>
 
-### Tech Stack Used
-- Kotlin
-- XML
-- SQLite
-- Cleveroad WaveinApp API
+## Testing 
+The Project manually test against.
+* Emulator
+  * Pixel 4 API 30 
+* Devices 
+  * Moto G5 S plus Android 8.1.0<br/>
 
-Cheers! 
+## License and Credits
+Credits have to go out to Cleveroad with their awesome WaveInApp API.<br/>
+
+### Cheers! 
