@@ -8,10 +8,11 @@
 
 ### A Music Player Application built with Kotlin and XML with Audio Visualizer Wave Effect using Cleverroad WaveInApp [API](https://github.com/Cleveroad/WaveInApp).
 <br/>
+<p float = "left">
 <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_1.PNG?raw=true" width="200" /> 
 <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_3.PNG?raw=true" width="190" />
 <img src="https://github.com/abhinavjain20/Android/blob/master/Echo/screenshot_4.PNG?raw=true" width="212" />
-
+</p>
 <br/>
 
 ## Development 
