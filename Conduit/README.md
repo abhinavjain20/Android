@@ -5,7 +5,7 @@
 </h1>
 
 ### Demonstrate a Full Stack Android Application built with Kotlin including CRUD operations, authentication and more.<br/>
-### A Medium.com clone (called Conduit) is built using Kotlin to connect to other backends from [ https://realworld.io/]<br/>
+### A Medium.com clone (called Conduit) is built using Kotlin to connect to other backends from [https://realworld.io/] <br/>
 ### For More Information on how this works go to [RealWorld](https://github.com/gothinkster/realworld) repo.<br/>
 ## Development 
 The Project is developed in [Android Studio](https://developer.android.com/studio).<br/>
